@@ -2,7 +2,7 @@ alert('Bem vindo ao jogo do número secreto!');
 //funcao alert() -> cria caixa de diálogo para o usuário
 
 let numero_secreto = Math.floor(Math.random() * 50) + 1; //criação de um número secreto de 0 a 50 (incluindo 50) para cada inicialização do jogo
-console.log(numero_secreto) //possibilidade de visualizar o número secreto no console para testes
+console.log('Número secreto da rodada: '+numero_secreto) //possibilidade de visualizar o número secreto no console para testes
 
 
 let numero_escolhido = prompt('Escolha um número de 0 a 50 (incluindo 50):'); //Input de valor escolhido para tentar adivinhar o jogo
