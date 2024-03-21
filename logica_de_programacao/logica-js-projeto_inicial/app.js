@@ -4,9 +4,8 @@ alert('Bem vindo ao jogo do número secreto!');
 let numero_secreto = Math.floor(Math.random() * 50) + 1; //criação de um número secreto de 0 a 50 (incluindo 50) para cada inicialização do jogo
 console.log(`Número secreto da rodada: ${numero_secreto}`); //possibilidade de visualizar o número secreto no console para testes
 
-
+let tentativa = 1;
 let numero_escolhido = prompt('Escolha um número de 0 a 50 (incluindo 50):'); //Input de valor escolhido para tentar adivinhar o jogo
-
 
 
 while (numero_escolhido != numero_secreto) {/// Executar input de valor até que o usuário acerte o número
@@ -22,12 +21,20 @@ while (numero_escolhido != numero_secreto) {/// Executar input de valor até que
     
         }
     }
+    tentativa++; // Aumenta a quantidade de tentativas
     numero_escolhido = prompt('Tente novamente:');
 
 }
     
+if (tentativa > 1){
+    alert(`Parabéns, você acertou na ${tentativa}ª tentativa🥳! O número ${numero_escolhido} era o número secreto!`);
 
-alert(`Parabéns, você acertou🥳! O número ${numero_escolhido} era o número secreto!`);
+}else{
+    alert(`UAU! Você acertou na ${tentativa}ª tentativa🥳🥳🥳!!! O número ${numero_escolhido} era o número secreto!`);
+
+}
+
+
 
     
 
