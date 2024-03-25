@@ -1,9 +1,9 @@
-let dia_da_semana = prompt('Qual o dia da semana?')
+let nome = prompt("Digite seu nome para prosseguir:");
 
-if (dia_da_semana.toLowerCase() == "sábado" || dia_da_semana.toLowerCase() == "sabado" || dia_da_semana == "domingo"){
-    alert('Bom final de semana!');
+if (nome == ""){
+    alert("Desculpe, nenhum nome fornecido!");
 
 }else{
-    alert("Boa semana!")
-
+    alert(`Olá, ${nome}, seja bem-vindo(a) à nossa empresa!`);
+    
 }

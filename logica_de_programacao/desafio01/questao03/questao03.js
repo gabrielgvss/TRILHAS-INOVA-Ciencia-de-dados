@@ -1,9 +1,2 @@
-let pontuacao = prompt("Insira a pontuação obtida: ");
+let notas = 0;
 
-if (pontuacao >= 100){
-    alert("Parabéns, você venceu!");
-
-}else{
-    alert("Tente novamente para ganhar!");
-
-}

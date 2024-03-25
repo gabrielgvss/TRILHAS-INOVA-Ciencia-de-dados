@@ -1,8 +1,9 @@
-let numero = prompt('Digite um número: ');
+let idade = prompt("Digite sua idade: ");
 
-if (numero >= 0){
-    alert(`O número ${numero} é positivo`);
+if (idade >= 60){
+    alert("Aguarde na fila de prioridade");
 
 }else{
-    alert(`O número ${numero} é negativo`);
+    alert("Aguarde na fila normal");
+    
 }
