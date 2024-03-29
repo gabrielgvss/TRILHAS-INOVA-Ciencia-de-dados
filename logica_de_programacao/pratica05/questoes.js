@@ -35,3 +35,57 @@ function calcularFatorial(numero){
     }
 }
 console.log(calcularFatorial(4));
+
+//3)
+function converteDolarReal(valor_dolar){
+    return parseFloat(valor_dolar) * 4.8;
+
+}
+console.log(converteDolarReal(2.5))
+
+//4)
+function calculaPerimetroAreaRetangulo(comprimento, largura){
+    let perimetro = 2 * (comprimento + largura);
+    let area = comprimento * largura
+
+    return [perimetro, area];
+}
+let [p, a] = calculaPerimetroAreaRetangulo(2,5);
+console.log(`Perímetro: ${p}\nÁrea: ${a}`);
+
+//5)
+function calculaPerimetroAreaCirculo(raio){
+    let pi = 3.14;
+    let perimetro = 2 * pi * parseFloat(raio);
+    let area = pi * (raio * raio);
+
+    return [perimetro, area];
+}
+let [perimetro, area] = calculaPerimetroAreaCirculo(5);
+console.log(`Perímetro: ${perimetro.toFixed(2)}\nÁrea: ${area.toFixed(2)}`);
+
+//6)
+function mostrarOperacoes(numero) {
+    console.log(`Tabuada de Multiplicação (${numero}):`);
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${numero} x ${i} = ${numero * i}`);
+    }
+
+    console.log(`\nOperações de Adição (${numero}):`);
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${numero} + ${i} = ${numero + i}`);
+    }
+
+    console.log(`\nOperações de Subtração (${numero}):`);
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${numero} - ${i} = ${numero - i}`);
+    }
+
+    console.log(`\nOperações de Divisão (${numero}):`);
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${numero} / ${i} = ${numero / i}`);
+    }
+}
+mostrarOperacoes(10);
+
+
