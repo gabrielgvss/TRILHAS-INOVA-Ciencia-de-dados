@@ -1,6 +1,7 @@
 function mudarTextoElemento(elemento_html, texto){
     let elemento = document.querySelector(elemento_html);
     elemento.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female');
 
 }
 
