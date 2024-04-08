@@ -49,8 +49,8 @@ function ordenarNumeros(a, b, c) {
     return [a, b, c];
 }
 
-// Exemplo de uso
+
 let numeros = ordenarNumeros(3, 1, 2);
-console.log(numeros); // Saída: [1, 2, 3]
+console.log(numeros); 
 
 
