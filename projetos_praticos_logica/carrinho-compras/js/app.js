@@ -1,23 +1,23 @@
 let valorTotal;
-inicializar();
+limpar();
 
-function inicializar(){
+function limpar(){
     valorTotal = 0;
     document.getElementById('valor-total').textContent = 'R$ 0';
     document.getElementById('lista-produtos').innerHTML = '';
+    document.getElementById('quantidade').value = 0;
 }
-
 
 function adicionar(){
     let produto_atual = gerarProduto();
 
     if (produto_atual[2] <= 0) {
         alert("A quantidade selecionada deve ser maior que zero.");
-        return; 
-    }
 
-    adicionarCarrinho(produto_atual);
-    calcularTotal();
+    }else{
+        adicionarCarrinho(produto_atual);
+        calcularTotal();
+    }
 
 }
 
@@ -28,7 +28,6 @@ function gerarProduto(){
     let qtd_produto = document.getElementById('quantidade').value;
 
     let produto = [nome_produto, valor_produto, qtd_produto];
-    console.log(produto);
 
     return produto;
 
@@ -62,9 +61,5 @@ function adicionarCarrinho(produto){
 function calcularTotal(){
     let total_carrinho = document.getElementById('valor-total');
     total_carrinho.textContent = `R$${valorTotal}`;
-    
-}
-
-function limpar(){
     
 }
