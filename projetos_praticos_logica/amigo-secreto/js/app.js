@@ -60,13 +60,23 @@ function sortear() {
 
 function sortearIndiceAleatorio(array) {
     return Math.floor(Math.random() * array.length);
+
+}
+
+function mostrarSorteados(){
+    let amigo_atual;
+    let amigo_secreto;
+
+    for (let amigo of amigos){
+        document.getElementById('')
+    }
 }
 
 
 
 
 function verificar_repeticao(nome_amigo) {
-    for (var amigo of amigos) {
+    for (let amigo of amigos) {
         if (amigo.pessoa == nome_amigo) {
             return true; 
         }
