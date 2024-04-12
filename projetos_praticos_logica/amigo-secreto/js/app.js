@@ -29,33 +29,39 @@ function adicionar(){
 }
 
 function sortear() {
-    var amigosParaSorteio = amigos.slice(); // Faz uma cópia da lista de amigos
+    if (amigos.length <= 1){
+        alert("Insira no mínimo dois amigos para poder realizar o sorteio!");
 
-    for (let i = 0; i < amigos.length; i++) {
-        let amigo = amigos[i];
+    }else {
+        let amigosParaSorteio = amigos.slice(); // Faz uma cópia da lista de amigos
 
-        // Remove o amigo atual da lista de amigos disponíveis para sorteio
-        let amigosDisponiveis = amigosParaSorteio.filter(function(amigoParaSorteio) {
-            return amigoParaSorteio.pessoa !== amigo.pessoa;
-        });
+        for (let i = 0; i < amigos.length; i++) {
+            let amigo = amigos[i];
 
-        // Verifica se ainda há amigos disponíveis para sorteio
-        if (amigosDisponiveis.length > 0) {
-            // Sorteia um índice aleatório da lista de amigos disponíveis
-            let indiceSorteado = sortearIndiceAleatorio(amigosDisponiveis);
+            // Remove o amigo atual da lista de amigos disponíveis para sorteio
+            let amigosDisponiveis = amigosParaSorteio.filter(function(amigoParaSorteio) {
+                return amigoParaSorteio.pessoa !== amigo.pessoa;
+            });
 
-            // Define o amigo secreto para a pessoa atual
-            amigo.amigo_secreto = amigosDisponiveis[indiceSorteado].pessoa;
+            // Verifica se ainda há amigos disponíveis para sorteio
+            if (amigosDisponiveis.length > 0) {
+                // Sorteia um índice aleatório da lista de amigos disponíveis
+                let indiceSorteado = sortearIndiceAleatorio(amigosDisponiveis);
 
-            // Remove o amigo sorteado da lista de amigos disponíveis
-            amigosParaSorteio.splice(amigosParaSorteio.indexOf(amigosDisponiveis[indiceSorteado]), 1);
-        } else {
-            console.log("Não há mais amigos disponíveis para sorteio.");
-            break; // Se não houver mais amigos disponíveis, interrompe o sorteio
+                // Define o amigo secreto para a pessoa atual
+                amigo.amigo_secreto = amigosDisponiveis[indiceSorteado].pessoa;
+
+                // Remove o amigo sorteado da lista de amigos disponíveis
+                amigosParaSorteio.splice(amigosParaSorteio.indexOf(amigosDisponiveis[indiceSorteado]), 1);
+            } else {
+                console.log("Não há mais amigos disponíveis para sorteio.");
+                break; // Se não houver mais amigos disponíveis, interrompe o sorteio
+            }
         }
-    }
 
-    console.log(amigos);
+        mostrarSorteados();
+    }  
+
 }
 
 function sortearIndiceAleatorio(array) {
@@ -68,12 +74,10 @@ function mostrarSorteados(){
     let amigo_secreto;
 
     for (let amigo of amigos){
-        document.getElementById('')
+        document.getElementById('lista-sorteio').innerHTML += `Amigo secreto do ${amigo.pessoa} : ${amigo.amigo_secreto} <br>`;
     }
+
 }
-
-
-
 
 function verificar_repeticao(nome_amigo) {
     for (let amigo of amigos) {
@@ -88,4 +92,6 @@ function reiniciar(){
     amigos = [];
     document.getElementById('lista-amigos').innerHTML = "";
     document.getElementById('nome-amigo').value = "";
+    document.getElementById('lista-sorteio').innerHTML = "";
+
 }
