@@ -2,7 +2,6 @@ const taxa_juros = (0.6022/100)
 let [valor_aplicado, tempo_aplicacao] = solicitar_dados();
 calcularRendimento(valor_aplicado, tempo_aplicacao);
 
-
 function solicitar_dados(){
     let valor_aplicado = parseFloat(prompt('Digite o valor aplicado: '));
     let tempo_aplicacao = parseInt(prompt('Digite a quantidade de meses em aplicação: '));
@@ -18,8 +17,6 @@ function solicitar_dados(){
     return [valor_aplicado, tempo_aplicacao];
 }
 
-
-
 function calcularRendimento(capital_aplicado, tempo){
     let rendimento = capital_aplicado * (Math.pow((1 + taxa_juros), tempo)) - capital_aplicado;
 
@@ -29,4 +26,6 @@ function calcularRendimento(capital_aplicado, tempo){
         a juros de ${taxa_juros*100}% ao mês`
     );
 }
+
+
  
