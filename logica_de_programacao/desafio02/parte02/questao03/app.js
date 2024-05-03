@@ -1,18 +1,21 @@
 let numero_aleatorio = geraNumAletorio();
 console.log(numero_aleatorio);
 
+let acertou = false; // Variável para controlar se o usuário acertou
+
 for (let tentativa = 1; tentativa <= 3; tentativa++) {
     let chute = getChute();
 
     if (chute === numero_aleatorio) {
         alert(`VOCÊ ACERTOU! ${chute} ERA O NÚMERO SECRETO!\nNúmero de tentativas: ${tentativa}`);
+        acertou = true; // Define que o usuário acertou
         break;
     } else {
-        alert(`Ainda não acertou! Você ainda tem ${3-tentativa} tentativa(s)`);
+        alert(`Ainda não acertou! Você ainda tem ${3 - tentativa} tentativa(s)`);
     }
 }
 
-if (tentativa === 0) {
+if (!acertou) { // Verifica se o usuário não acertou
     alert(`Fim das tentativas, infelizmente você perdeu!\nO número secreto era ${numero_aleatorio}`);
 }
 
