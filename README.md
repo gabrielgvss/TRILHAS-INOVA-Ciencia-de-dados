@@ -17,4 +17,5 @@
 > Cursos da trilha soft skills concluídos:
 - Síndrome do Impostor: reconheça seus sucessos e resultados
 - Aprenda a aprender: técnicas para seu autodesenvolvimento
+- Produtividade: hábitos e práticas para o dia a dia
 
