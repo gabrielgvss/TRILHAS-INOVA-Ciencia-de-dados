@@ -3,7 +3,7 @@
 
 <p> Armazenamento de diretórios relacionados a exercícios de desafios do programa e de cursos da plataforma Alura </p>
 
-> Curso atual da trilha de Dados: Data Analysis: Google Sheets
+> Curso atual da trilha de Dados: Looker Studio: criando o primeiro relatório
 
 > Curso atual da trilha de Soft Skills: Produtividade: Hábitos e práticas para o dia a dia 
 
@@ -12,6 +12,7 @@
 - Lógica de programação: explore funções e listas
 - Lógica de programação: praticando com desafios
 - Git e GitHub: repositório, commits e versões
+- Data Analysis: Google Sheets
 
 > Cursos da trilha soft skills concluídos:
 - Síndrome do Impostor: reconheça seus sucessos e resultados
