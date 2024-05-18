@@ -18,5 +18,9 @@
 > Cursos da trilha soft skills concluídos:
 - Síndrome do Impostor: reconheça seus sucessos e resultados
 - Aprenda a aprender: técnicas para seu autodesenvolvimento
+<<<<<<< HEAD
 - Produtividade: Hábitos e práticas para o dia a dia
+=======
+- Produtividade: hábitos e práticas para o dia a dia
+>>>>>>> 7b7b2a5a6f7f99c7dfde85ce9118195a3e75416f
 
