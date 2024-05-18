@@ -19,8 +19,15 @@
 - Síndrome do Impostor: reconheça seus sucessos e resultados
 - Aprenda a aprender: técnicas para seu autodesenvolvimento
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Produtividade: Hábitos e práticas para o dia a dia
 =======
 - Produtividade: hábitos e práticas para o dia a dia
 >>>>>>> 7b7b2a5a6f7f99c7dfde85ce9118195a3e75416f
+=======
+- Produtividade: Hábitos e práticas para o dia a dia
+
+
+
+>>>>>>> 8c4daeb94d431b4972030c9e9d9dd1740655b869
 
