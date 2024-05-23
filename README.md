@@ -1,4 +1,4 @@
-<h1>ANÁLISE DE DADOS DO DESAFIO 03 - TRILHAS INOVA - CIÊ<h1> TRILHAS INOVA - Ciência de Dados </h1>
+<h1> TRILHAS INOVA - Ciência de Dados </h1>
 <h2> Registro de conhecimentos do programa TRILHAS INOVA, na trilha de Ciência de Dados </h2>
 
 <p> Armazenamento de diretórios relacionados a exercícios de desafios do programa e de cursos da plataforma Alura </p>
