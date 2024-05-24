@@ -1,0 +1,13 @@
+if [Genero] = 'Men'
+then [Numero Medalhas]
+END
+
+
+if [Genero] = 'Women'
+the [Numero Medalhas]
+END
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE0ODczNzg4MTRdfQ==
+-->
