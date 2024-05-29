@@ -3,7 +3,7 @@
 
 <p> Armazenamento de diretórios relacionados a exercícios de desafios do programa e de cursos da plataforma Alura </p>
 
-> Curso atual da trilha de Dados: "Dashboard com Tableau: conceitos essenciais"
+> Curso atual da trilha de Dados: "Python para Data Science: Primeiros Passos"
 
 > Curso atual da trilha de Soft Skills: "Comunicação assertiva: reduzindo conflitos e frustrações"
 
@@ -14,6 +14,7 @@
 - Git e GitHub: repositório, commits e versões
 - Data Analysis: Google Sheets
 - Looker Studio: criando o primeiro relatório
+- Dashboard com Tableau: conceitos essenciais
 
 > Cursos da trilha soft skills concluídos:
 - Síndrome do Impostor: reconheça seus sucessos e resultados
