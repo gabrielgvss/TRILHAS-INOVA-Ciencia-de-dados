@@ -3,7 +3,7 @@
 
 <p> Armazenamento de diretórios relacionados a exercícios de desafios do programa e de cursos da plataforma Alura </p>
 
-> Curso atual da trilha de Dados: "Python para Data Science: trabalhando com funções, estruturas de dados e exceções"
+> Curso atual da trilha de Dados: "NumPy: análise numérica eficiente com Python"
 
 > Curso atual da trilha de Soft Skills: "Comunicação assertiva: reduzindo conflitos e frustrações"
 
@@ -16,6 +16,7 @@
 - Looker Studio: criando o primeiro relatório
 - Dashboard com Tableau: conceitos essenciais
 - Python para Data Science: Primeiros Passos
+- Python para Data Science: trabalhando com funções, estruturas de dados e exceções
 
 > Cursos da trilha soft skills concluídos:
 - Síndrome do Impostor: reconheça seus sucessos e resultados
