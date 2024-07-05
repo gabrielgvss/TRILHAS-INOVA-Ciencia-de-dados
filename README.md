@@ -3,7 +3,7 @@
 
 <p> Armazenamento de diretórios relacionados a exercícios de desafios do programa e de cursos da plataforma Alura </p>
 
-> Curso atual da trilha de Dados: "Pandas: selecionando e agrupando dados"
+> Curso atual da trilha de Dados: "Estatística com Python: Frequências e Medidas"
 
 > Curso atual da trilha de Soft Skills: "Comunicação assertiva: reduzindo conflitos e frustrações"
 
@@ -19,6 +19,7 @@
 - Python para Data Science: trabalhando com funções, estruturas de dados e exceções
 - NumPy: análise numérica eficiente com Python
 - Pandas: conhecendo a biblioteca
+- Pandas: selecionando e agrupando dados
 
 > Cursos da trilha soft skills concluídos:
 - Síndrome do Impostor: reconheça seus sucessos e resultados
